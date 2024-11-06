@@ -1,0 +1,85 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.signInGradient {
+  background-image: linear-gradient(#ffffff, #f2edd0);
+}
+
+.rounded-10 {
+  border-radius: 10px;
+}
+
+.flag-dropdown {
+  border: 0px !important;
+  padding-right: 2px !important;
+  padding-left: 20px !important;
+}
+
+.icon {
+  display: inline-block;
+  font-size: inherit;
+  /* Inherits font-size from its parent, like an icon font */
+  width: 1em;
+  /* Scales based on the font-size */
+  height: 1em;
+  /* Scales based on the font-size */
+  color: inherit;
+  /* Inherits text color from its parent */
+}
+
+.btn-check:checked + .genderInput {
+  background: linear-gradient(45deg, #fdbb0a, #fe6a0e);
+  border: 0;
+  border-radius: 5%;
+  color: white !important;
+}
+
+/* .nav-link-tab.active{
+  color:#FFA400 !important;
+  border-bottom: 2px solid #FFA400 !important;
+}
+.nav-link-tab.active{
+  background-image: linear-gradient(45deg, #FDBB0A, #FE6A0E);
+  background-clip: border-box;
+  -webkit-background-clip: text; 
+} */
+
+.wallet_gradient {
+  background: linear-gradient(180deg, #ffdd9f, #ffb181);
+}
+
+.order_gradient {
+  background: linear-gradient(90deg, #fdbb0a, #fe6a0e);
+}
+
+.gradient-border {
+  position: relative;
+  width: 100%;
+  height: 1px;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #fdbb0a 0%, #fe6a0e 100%);
+}
+
+.outline-none {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.outline-none:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  rishivar-user-react-app:
+    image: rishivar-user-react-app
+    container_name: rishivar-user-react-app
+    build: .
+    networks:
+      - nginx-certbot
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 50m
+
+networks:
+  nginx-certbot:
+    external: true

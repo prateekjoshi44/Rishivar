@@ -1,0 +1,85 @@
+$primary: #fe6a0e;
+$secondary: #815040;
+$success:  darkgreen;
+$danger:  darkred;
+$info: #1E90FF;
+$warning:  #ffa400;
+// $light: #f0f5ff;
+// $tertiary: #eeeae9;
+$dark:  dimgrey;
+
+// primary: "#fe6a0e",
+//     primarydark: "#f24300",
+//     secondary: "#fdbb0a",
+//     secondarydark: "#ffa400",
+//     third: "#976856",
+//     thirddark: "#815040",
+
+@import "../../../node_modules//bootstrap/scss/bootstrap.scss";
+
+
+.top-nav-link{
+  @extend .nav-link;
+  &.active{
+    @extend .text-white;
+    @extend .fw-bold;
+
+  }
+  &:not(.active){
+    @extend .text-muted;
+    // @extend .fw-bold;
+
+  }
+}
+
+.bottom-nav-link{
+  text-decoration: none;
+  &.active{
+    @extend .text-primary;
+   
+
+  }
+  &:not(.active){
+    @extend .text-muted;
+    // @extend .fw-bold;
+
+  }
+}
+
+.btn-primary {
+  @extend .text-white;
+}
+
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+.btn-check:checked + .btn{
+  @extend .text-white;
+}
+
+.nav-link-tab{
+  @extend .nav-link;
+  &.active{
+color:black !important;
+
+    @extend .fw-bold;
+
+  }
+  &:not(.active){
+    @extend .text-black;
+    // @extend .fw-bold;
+
+  }
+}
+
+
+.btn-check:checked + .btn {
+  background-color: #ffffff;
+  border: 1px solid; /* Set the border width */
+  border-radius: 20%;
+  border-image: linear-gradient(45deg, #FDBB0A, #FE6A0E) 1; /* Apply the gradient */
+  color: #FFA400 !important;
+}
